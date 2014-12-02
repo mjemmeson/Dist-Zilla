@@ -33,7 +33,7 @@ Test::DZil provides routines for writing tests for Dist::Zilla plugins.
 
 =func Minter
 
-  my $tzil = Builder->from_config(...);
+  my $tzil = Builder->from_config( \%args, \%tester_args );
 
 These return class names that subclass L<Dist::Zilla::Dist::Builder> or
 L<Dist::Zilla::Dist::Minter>, respectively, with the L<Dist::Zilla::Tester>
